@@ -1,27 +1,54 @@
 #daily-video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
 }
 
 .overlay {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 1;
-    background-color: red;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 1;
+  background-color: rebeccapurple;
+}
+
+.text {
+  position: absolute;
+  top: 5%;
+  font-size: 2em;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .animate {
-
-    transform: translateX(-2000px);
+  transform: translateX(-2000px);
 }
+
+.play-btn {
+    padding: 10px 50px;
+    font-size: 0.75em;
+    border-radius: 10px;
+    border: none;
+}
+
+
+@media only screen and (min-width: 600px) {
+  .text {
+      font-size: 2.5em;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+    .text {
+        font-size: 3em;
+    }
+  }
