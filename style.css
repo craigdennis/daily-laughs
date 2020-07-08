@@ -1,0 +1,27 @@
+#daily-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+}
+
+.overlay {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    background-color: red;
+}
+
+.animate {
+
+    transform: translateX(-2000px);
+}

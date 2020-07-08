@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daily Laughs</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Daily Laughs</h1>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
 
-    <video id="daily-video" src=""></video>
+    <iframe
+      id="daily-video"
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/ux8GZAtCN-M"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <div class="overlay">
+        <h1>Daily Laughs</h1>
+        <p>A new curated stand up comedy show every day</p>
+        <button class="play-btn">Play</button>
+    </div>
 
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
