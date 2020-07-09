@@ -1,5 +1,5 @@
 #daily-video {
-  position: fixed;
+  position: absolute;
   right: 0;
   bottom: 0;
   min-width: 100%;
@@ -10,7 +10,7 @@
 }
 
 .overlay {
-  position: fixed;
+  position: absolute;
   right: 0;
   bottom: 0;
   min-width: 100%;
@@ -19,6 +19,7 @@
   height: auto;
   z-index: 1;
   background-color: rebeccapurple;
+  animation: 2s transform;
 }
 
 .text {
@@ -29,8 +30,8 @@
   padding-right: 10%;
 }
 
-.animate {
-  transform: translateX(-2000px);
+.animate { 
+  animation: moveUp 2s forwards;
 }
 
 .play-btn {
@@ -40,6 +41,11 @@
     border: none;
 }
 
+@keyframes moveUp {
+    100% {
+        transform: translateY(-1000px);
+    }
+}
 
 @media only screen and (min-width: 600px) {
   .text {
